@@ -1,6 +1,8 @@
 module.exports = {
   plugins: [
     `gatsby-plugin-styled-jsx`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

@@ -3,11 +3,16 @@ import { Button, Copy, Footer, Heading, Hero, Nav, Screen } from "../components"
 import CONSTANTS from "../constants"
 import { colors } from "../constants/styles"
 import { typography } from "../constants/styles"
-
+import { Helmet } from "react-helmet"
 const callToAction = `Schedule a free lesson now!`
 
 const Home = () => (
   <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>People's Music</title>
+      <link rel="canonical" href="https://peoplesmusic.studio/" />
+    </Helmet>
     <style jsx>
       {`
         :global(*) {

@@ -1,9 +1,15 @@
 import React from "react"
 import { Copy, Footer, Heading, Hero, Nav, Screen } from "../components"
 import { typography } from "../constants/styles"
+import { Helmet } from "react-helmet"
 
 const About = () => (
   <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>About</title>
+      <link rel="canonical" href="https://peoplesmusic.studio/about" />
+    </Helmet>
     <style jsx>
       {`
         :global(*) {

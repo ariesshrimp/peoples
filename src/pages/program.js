@@ -1,11 +1,16 @@
 import React from "react"
 import { Copy, Footer, Heading, Nav, Screen } from "../components"
 import { typography } from "../constants/styles"
-
+import { Helmet } from "react-helmet"
 const Program = () => {
   const offset = 96
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Program</title>
+        <link rel="canonical" href="https://peoplesmusic.studio/program" />
+      </Helmet>
       <style jsx>{`
         :global(*) {
           box-sizing: border-box;

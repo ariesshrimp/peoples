@@ -1,13 +1,21 @@
 import React from "react"
 import { Copy, Heading, Nav, Screen } from "../components"
 import { typography } from "../constants/styles"
-
+import { Helmet } from "react-helmet"
 import CONSTANTS from "../constants"
 
 const FreeTrial = () => {
   const offset = 96
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Free Trial Lesson</title>
+        <link
+          rel="canonical"
+          href="https://peoplesmusic.studio/free-trial-lesson"
+        />
+      </Helmet>
       <style jsx>
         {`
           :global(*) {

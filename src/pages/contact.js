@@ -1,6 +1,7 @@
 import React from "react"
 import { Button, Footer, Heading, Map, Nav, Screen } from "../components"
 import { typography } from "../constants/styles"
+import { Helmet } from "react-helmet"
 
 const sendGoogleForm = async ({ phone, email, message, name }) => {
   const googleFormURL =
@@ -49,6 +50,11 @@ const Contact = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact</title>
+        <link rel="canonical" href="https://peoplesmusic.studio/contact" />
+      </Helmet>
       <style jsx>
         {`
           :global(*) {

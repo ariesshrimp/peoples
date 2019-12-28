@@ -4,11 +4,13 @@ import CONSTANTS from "../constants"
 import { colors } from "../constants/styles"
 import { typography } from "../constants/styles"
 import { Helmet } from "react-helmet"
+import image from "../images/lesson-2.jpg"
 const callToAction = `Schedule a free lesson now!`
 
 const Home = () => (
   <>
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: "en" }}>
+      <meta name="description" content="Welcome to People's Music Studio" />
       <meta charSet="utf-8" />
       <title>People's Music</title>
       <link rel="canonical" href="https://peoplesmusic.studio/" />
@@ -42,7 +44,7 @@ const Home = () => (
     <Nav />
 
     <Hero
-      src="/media/images/lesson-1.jpg"
+      src={image}
       style={{ marginTop: "66px", filter: "grayscale(100%)" }}
       scrim
     >

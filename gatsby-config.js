@@ -4,6 +4,18 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-preact`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "People's Music Studio",
+        short_name: "PMS",
+        start_url: "/",
+        background_color: "#000",
+        theme_color: "#fff",
+        icon: "src/images/favicon.png",
+      },
+    },
+    "gatsby-plugin-offline",
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-151460947-1",

@@ -6,7 +6,11 @@ const Program = () => {
   const offset = 96
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: "en" }}>
+        <meta
+          name="description"
+          content="Brief summary of my teaching method"
+        />
         <meta charSet="utf-8" />
         <title>Program</title>
         <link rel="canonical" href="https://peoplesmusic.studio/program" />

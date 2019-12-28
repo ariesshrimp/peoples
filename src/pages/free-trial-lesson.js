@@ -8,7 +8,11 @@ const FreeTrial = () => {
   const offset = 96
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: "en" }}>
+        <meta
+          name="description"
+          content="How to sign up for your free lesson!"
+        />
         <meta charSet="utf-8" />
         <title>Free Trial Lesson</title>
         <link

@@ -50,7 +50,8 @@ const Contact = () => {
 
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: "en" }}>
+        <meta name="description" content="A contact form" />
         <meta charSet="utf-8" />
         <title>Contact</title>
         <link rel="canonical" href="https://peoplesmusic.studio/contact" />

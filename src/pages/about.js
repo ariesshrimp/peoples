@@ -2,11 +2,16 @@ import React from "react"
 import { Copy, Footer, Heading, Hero, Nav, Screen } from "../components"
 import { typography } from "../constants/styles"
 import { Helmet } from "react-helmet"
+import image from "../images/lesson-1.jpg"
 
 const About = () => (
   <>
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: "en" }}>
       <meta charSet="utf-8" />
+      <meta
+        name="description"
+        content="Brief description of the studio's history"
+      />
       <title>About</title>
       <link rel="canonical" href="https://peoplesmusic.studio/about" />
     </Helmet>
@@ -27,11 +32,7 @@ const About = () => (
     </style>
     <Nav />
 
-    <Hero
-      src="/media/images/lesson-2.jpg"
-      style={{ marginTop: "66px", position: "relative" }}
-      scrim
-    >
+    <Hero src={image} style={{ marginTop: "66px", position: "relative" }} scrim>
       <Heading inverted size="xl" style={{ textAlign: "center" }}>
         About
       </Heading>

@@ -11,7 +11,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "now && now --prod"
   },
   "dependencies": {
     "gatsby": "^2.18.12",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.7.4",
     "babel-preset-gatsby": "^0.2.26",
+    "now": "^16.7.0",
     "prettier": "^1.19.1"
   },
   "repository": {

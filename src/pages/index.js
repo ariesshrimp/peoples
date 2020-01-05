@@ -75,7 +75,7 @@ const Home = () => (
         I focus on making music that students find exciting and fulfilling.
         Second, I teach the simple fundamentals of music underpinning{" "}
         <em>any</em>
-        genre or style. Students at ${CONSTANTS.BUSINESS_NAME} work to achieve
+        genre or style. Students at {CONSTANTS.BUSINESS_NAME} work to achieve
         their own musical goals, from performing to creative expression. These
         are the deepest, most powerful approaches to learning any instrument.
         Access to and the creation of music is every person's basic right.
